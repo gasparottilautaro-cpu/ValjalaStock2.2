@@ -1,0 +1,42 @@
+STOCK · Gestión de cocina
+Versión nueva · PWA instalable para Android
+
+QUÉ INCLUYE
+- Cierres de turno con cantidades, pesos y estados Hay / Hay poco / No hay.
+- Mensaje de WhatsApp con panes y papas, carnes y bajo stock.
+- Stock actual que se actualiza al guardar cada cierre.
+- Fechas de vencimiento para carne molida, medallones frescos, verduras, leche, preparaciones y salsas.
+- Lotes completos para preparaciones; se marcan como utilizados o descartados.
+- Mamadera de servicio y lotes de reserva para cada salsa.
+- Compras, elaboraciones y transformaciones internas en un único apartado Ingresos.
+- Rotación y planificación con estadística manual de uso para todos los productos y preparaciones, además del cálculo automático por comparación de cierres e ingresos. Permite comparar ambos datos y separa días habituales de viernes/sábado. Cuando hay cierres comparables, el cálculo automático es la referencia principal; la carga manual queda visible como referencia.
+- Pedidos, horarios y ganancias, historial y configuración.
+- Funcionamiento local y modo sin conexión luego de instalarse desde HTTPS.
+
+PUBLICAR EN GITHUB PAGES DESDE EL CELULAR
+1. Descargá STOCK_VIKINGA.zip y extraé su contenido con el administrador de archivos del teléfono.
+2. Abrí el repositorio de GitHub donde querés publicar la app.
+3. Subí el contenido extraído a la carpeta principal del repositorio (index.html debe quedar directamente en la raíz). No subas solamente el ZIP: GitHub Pages necesita los archivos extraídos.
+4. Si el repositorio ya tenía una versión anterior, reemplazá los archivos de la aplicación por los de esta versión.
+5. En GitHub, entrá a Settings → Pages y comprobá que Pages publique desde la rama principal y la carpeta raíz `/` (root).
+6. Abrí la dirección de GitHub Pages. En Chrome para Android, usá el menú ⋮ → Agregar a pantalla principal / Instalar aplicación.
+
+IMPORTANTE SOBRE LOS DATOS
+- Esta versión es una aplicación nueva y comienza con el inventario vacío.
+- La información se guarda localmente en el navegador del dispositivo. No se sincroniza automáticamente entre teléfonos.
+- En Configuración podés descargar una copia de seguridad JSON. Guardala periódicamente en un lugar seguro.
+- No borres los datos del sitio desde los ajustes de Chrome si querés conservar los registros.
+
+ESTADÍSTICA MANUAL Y AUTOMÁTICA
+En Rotación y planificación podés desplegar cada categoría y cargar cuánto se utiliza por día en días habituales y cuánto los viernes/sábados. Guardá la carga para que quede disponible como referencia inicial. Cuando haya cierres comparables, la app utiliza el cálculo automático como referencia principal y mantiene visible la estimación manual para contrastarla. Los productos sin dato manual ni automático no aparecen en la proyección hasta que cargues una estimación o existan movimientos suficientes.
+
+CÓMO SE CALCULAN LAS ESTADÍSTICAS
+El consumo se estima usando: stock del cierre anterior + ingresos registrados − stock del cierre siguiente. Se descuentan transformaciones y descartes registrados para no confundirlos con ventas/consumo. Se necesitan al menos dos cierres en fechas distintas. Si falta una compra, una elaboración o un descarte, la estimación puede quedar distorsionada.
+
+NOTAS DE USO
+- El cierre no administra vencimientos; solamente registra cantidades, pesos y estados.
+- Las fechas y lotes se registran en Stock actual.
+- Las alertas aparecen el día del vencimiento y el día anterior; los vencimientos pasados se muestran como vencidos.
+- Los lotes se descuentan completos al marcarlos como utilizados o descartados.
+- La recomendación de carne molida usa un horizonte de tres días y considera los medallones disponibles. Para incluir papas en las estadísticas, configurá en Ajustes el peso real de una bolsa cerrada; la app no supone ese valor. Es orientativa y no sustituye el control sanitario ni las condiciones de conservación indicadas por proveedores o responsables de cocina.
+- La app no envía datos a un servidor: todo se almacena en el navegador del dispositivo.

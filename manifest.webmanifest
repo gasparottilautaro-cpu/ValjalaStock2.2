@@ -1,0 +1,25 @@
+{
+  "name": "STOCK · Gestión de cocina",
+  "short_name": "STOCK",
+  "description": "Inventario, cierres, vencimientos y planificación de cocina.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4ead8",
+  "theme_color": "#c6aa82",
+  "icons": [
+    {
+      "src": "./assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

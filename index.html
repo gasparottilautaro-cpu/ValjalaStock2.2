@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#c6aa82">
+  <meta name="description" content="STOCK — gestión de cocina, inventario, vencimientos y planificación.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>STOCK · Gestión de cocina</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-wrap">
+        <img class="brand-logo" src="assets/stock-logo.png" alt="STOCK, identidad vikinga">
+        <div class="brand-tagline">GESTIÓN DE COCINA <span>•</span> PLANIFICÁ · CONTROLÁ · OPTIMIZÁ</div>
+      </div>
+      <div class="top-actions">
+        <span id="connection-status" class="connection-pill"><i></i> Local</span>
+        <button class="icon-button" data-go="configuracion" aria-label="Configuración" title="Configuración">⚙</button>
+      </div>
+    </header>
+    <div class="app-layout">
+      <aside class="sidebar" id="sidebar">
+        <nav id="side-nav" aria-label="Navegación principal"></nav>
+        <div class="sidebar-foot">HECHO PARA LA COCINA<br><small>STOCK · EDICIÓN LOCAL</small></div>
+      </aside>
+      <main id="main" class="main-content" tabindex="-1"></main>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Navegación móvil"></nav>
+  </div>
+  <div id="modal-root"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
